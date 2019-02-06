@@ -16,7 +16,7 @@ category:            Graphics
 extra-source-files:  CHANGELOG.md
 
 library
-  -- exposed-modules:
+  exposed-modules:      Hello
   -- other-modules:
   -- other-extensions:
   build-depends:        base ^>=4.12.0.0
@@ -34,6 +34,8 @@ executable points
   -- other-modules:
   -- other-extensions:
   build-depends:        base ^>=4.12.0.0
+                      , points
+                      , gi-gtk-declarative-app-simple
   hs-source-dirs:       app
   default-language:     Haskell2010
   ghc-options:          -Wall -threaded
